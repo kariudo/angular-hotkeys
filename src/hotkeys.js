@@ -399,8 +399,8 @@
             // if the callback is executed directly `hotkey.get('w').callback()`
             // there will be no event, so just execute the callback.
             if (event) {
-              var target = event.target || event.srcElement; // srcElement is IE only
-              var nodeName = target.nodeName.toUpperCase();
+              let target = event.target || event.srcElement; // srcElement is IE only
+              let nodeName = target.nodeName.toUpperCase();
 
               // check if the input has a mousetrap class, and skip checking preventIn if so
               if ((' ' + target.className + ' ').indexOf(' mousetrap ') > -1) {
