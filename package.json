@@ -1,10 +1,13 @@
 {
-  "name": "angular-hotkeys",
-  "author": "Wes Cruver",
-  "version": "1.7.0",
+  "name": "@kariudo/angular-hotkeys",
+  "author": {
+    "name": "Hunter Horsman",
+    "email": "kariudo@gmail.com"
+  },
+  "version": "1.8.0",
   "license": "MIT",
   "description": "Automatic keyboard shortcuts for your Angular Apps",
-  "homepage": "https://chieffancypants.github.io/angular-hotkeys",
+  "homepage": "https://github.com/kariudo/angular-hotkeys",
   "main": "build/hotkeys.js",
   "keywords": [
     "angular",
@@ -15,13 +18,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/chieffancypants/angular-hotkeys.git"
+    "url": "git://github.com/kariudo/angular-hotkeys.git"
   },
   "bugs": {
-    "url": "https://github.com/chieffancypants/angular-hotkeys/issues"
+    "url": "https://github.com/kariudo/angular-hotkeys/issues"
   },
   "scripts": {
-    "test": "node_modules/karma/bin/karma start test/karma.conf.js"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -31,15 +33,6 @@
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-karma": "^0.11.0",
-    "grunt-ng-annotate": "^0.3.0",
-    "karma": "~0.12.0",
-    "karma-chrome-launcher": "~0.1.0",
-    "karma-coffee-preprocessor": "~0.1.0",
-    "karma-coverage": "~0.1.0",
-    "karma-firefox-launcher": "~0.1.0",
-    "karma-html2js-preprocessor": "~0.1.0",
-    "karma-jasmine": "~0.1.3",
-    "karma-phantomjs-launcher": "^0.2.0",
-    "karma-script-launcher": "~0.1.0"
+    "grunt-ng-annotate": "^0.3.0"
   }
 }

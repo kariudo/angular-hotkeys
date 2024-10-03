@@ -46,21 +46,6 @@ module.exports = function(grunt) {
       }
     },
 
-    karma: {
-      unit: {
-        configFile: 'test/karma.conf.js',
-        singleRun: true,
-        coverageReporter: {
-          type: 'text',
-          dir: 'coverage/'
-        }
-      },
-      watch: {
-        configFile: 'test/karma.conf.js',
-        singleRun: false,
-        reporters: ['progress']  // Don't display coverage
-      }
-    },
 
     jshint: {
       jshintrc: '.jshintrc',
@@ -111,8 +96,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-karma');
 
-  grunt.registerTask('default', ['jshint', 'karma:unit', 'ngAnnotate', 'uglify', 'cssmin', 'concat:build']);
-  grunt.registerTask('test', ['karma:watch']);
+  grunt.registerTask('default', ['jshint', 'ngAnnotate', 'uglify', 'cssmin', 'concat:build']);
   grunt.registerTask('build', ['default']);
 
 };

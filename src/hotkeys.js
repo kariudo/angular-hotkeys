@@ -3,6 +3,7 @@
  *
  * Automatic keyboard shortcuts for your angular apps
  *
+ * (c) 2024 Hunter Horsman 
  * (c) 2016 Wes Cruver
  * License: MIT
  */
