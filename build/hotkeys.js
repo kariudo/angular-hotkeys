@@ -1,7 +1,7 @@
 /*! 
- * angular-hotkeys v1.8.0
+ * @kariudo/angular-hotkeys v1.8.0
  * https://github.com/kariudo/angular-hotkeys
- * Copyright (c) 2024 Hunter Horsman
+ * Copyright (c) 2024 [object Object]
  * License: MIT
  */
 /*
@@ -9,7 +9,7 @@
  *
  * Automatic keyboard shortcuts for your angular apps
  *
- * (c) 2024 Hunter Horsman
+ * (c) 2024 Hunter Horsman 
  * (c) 2016 Wes Cruver
  * License: MIT
  */
@@ -405,8 +405,8 @@
             // if the callback is executed directly `hotkey.get('w').callback()`
             // there will be no event, so just execute the callback.
             if (event) {
-              var target = event.target || event.srcElement; // srcElement is IE only
-              var nodeName = target.nodeName.toUpperCase();
+              let target = event.target || event.srcElement; // srcElement is IE only
+              let nodeName = target.nodeName.toUpperCase();
 
               // check if the input has a mousetrap class, and skip checking preventIn if so
               if ((' ' + target.className + ' ').indexOf(' mousetrap ') > -1) {
