@@ -22,7 +22,7 @@ jobs:
       - name: Build w/ Grunt
         run: grunt
       - name: Publish to npm
-        working-directory: ./build
+        working-directory: .
         run: npm publish --tag latest --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
